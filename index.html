@@ -1,0 +1,58 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas Wonder 2024</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Snow Effect Container -->
+    <div class="snow-container"></div>
+
+    <!-- Audio Player -->
+    <div class="audio-player">
+        <audio id="bgMusic" loop>
+            <source src="https://yourserver.com/jingle-bells.mp3" type="audio/mpeg">
+        </audio>
+        <button id="audioToggle" class="audio-btn">🔊</button>
+    </div>
+
+    <!-- Main Hero Section -->
+    <div class="hero">
+        <div class="hero-content" data-aos="fade-up">
+            <h1>Christmas Wonder 2024</h1>
+            <div class="countdown-container">
+                <div id="countdown">
+                    <div class="countdown-box">
+                        <span id="days">00</span>
+                        <label>Days</label>
+                    </div>
+                    <div class="countdown-box">
+                        <span id="hours">00</span>
+                        <label>Hours</label>
+                    </div>
+                    <div class="countdown-box">
+                        <span id="minutes">00</span>
+                        <label>Minutes</label>
+                    </div>
+                    <div class="countdown-box">
+                        <span id="seconds">00</span>
+                        <label>Seconds</label>
+                    </div>
+                </div>
+            </div>
+            <div class="cta-buttons">
+                <a href="#" class="btn-primary" data-aos="fade-right">Explore More</a>
+                <a href="#" class="btn-secondary" data-aos="fade-left">Get Tickets</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
