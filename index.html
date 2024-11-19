@@ -1,30 +1,20 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Christmas Wonder 2024</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Mountains+of+Christmas:wght@700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Snow Effect Container -->
     <div class="snow-container"></div>
-
-    <!-- Audio Player -->
-    <div class="audio-player">
-        <audio id="bgMusic" loop>
-            <source src="https://yourserver.com/jingle-bells.mp3" type="audio/mpeg">
-        </audio>
-        <button id="audioToggle" class="audio-btn">🔊</button>
-    </div>
-
-    <!-- Main Hero Section -->
+    
     <div class="hero">
         <div class="hero-content" data-aos="fade-up">
             <h1>Christmas Wonder 2024</h1>
+            
             <div class="countdown-container">
                 <div id="countdown">
                     <div class="countdown-box">
@@ -45,11 +35,19 @@
                     </div>
                 </div>
             </div>
+
             <div class="cta-buttons">
-                <a href="#" class="btn-primary" data-aos="fade-right">Explore More</a>
-                <a href="#" class="btn-secondary" data-aos="fade-left">Get Tickets</a>
+                <button class="btn-primary">Explore More</button>
+                <button class="btn-secondary">Get Tickets</button>
             </div>
         </div>
+    </div>
+
+    <div class="audio-player">
+        <audio id="bgMusic" loop>
+            <source src="assets/jingle-bell-rock.mp3" type="audio/mp3">
+        </audio>
+        <button id="audioToggle" class="audio-btn">🔈</button>
     </div>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

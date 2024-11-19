@@ -1,4 +1,3 @@
-// main.js
 document.addEventListener('DOMContentLoaded', () => {
     // Initialize AOS
     AOS.init({
@@ -38,9 +37,22 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     setInterval(updateCountdown, 1000);
 
-    // Audio Control
+    // Enhanced Audio Control
     const audio = document.getElementById('bgMusic');
     const audioBtn = document.getElementById('audioToggle');
+    let isFirstClick = true;
+
+    // Auto-play policy handling
+    document.addEventListener('click', () => {
+        if (isFirstClick) {
+            audio.play().then(() => {
+                audioBtn.textContent = '🔊';
+                isFirstClick = false;
+            }).catch(error => {
+                console.log("Audio autoplay failed:", error);
+            });
+        }
+    }, { once: true });
     
     audioBtn.addEventListener('click', () => {
         if (audio.paused) {
@@ -51,6 +63,9 @@ document.addEventListener('DOMContentLoaded', () => {
             audioBtn.textContent = '🔈';
         }
     });
+
+    // Set initial volume
+    audio.volume = 0.5;
 });
 
 // Parallax Effect
